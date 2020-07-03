@@ -1,4 +1,4 @@
-INSERT INTO domicilio ( calle, colonia, alcaldia, codigo_postal, ciudad) 
+/*INSERT INTO domicilio ( calle, colonia, alcaldia, codigo_postal, ciudad) 
 	VALUES ("Benito Juarez #4", "santa martha", "iztapalapa", 09560, "CDMX");
 INSERT INTO domicilio ( calle, colonia, alcaldia, codigo_postal, ciudad) 	# DOMICILIO
 	VALUES ("insurgentes #123", "Roma", "Benito Juarez", 078923, "CDMX");
@@ -6,30 +6,13 @@ INSERT INTO domicilio ( calle, colonia, alcaldia, codigo_postal, ciudad)
 	VALUES ("popocatepetl #44", "San Lorenzo Tezonco", "Tlahuac", 098765, "CDMX");
 INSERT INTO domicilio ( calle, colonia, alcaldia, codigo_postal, ciudad) 
 	VALUES ("Eje central #91", "Anzures", "Cuahutemoc", 088653, "CDMX");
+*/
 
-
-INSERT INTO persona ( nombre, apellido, telefono_celular, id_domicilio) 
-	VALUES ("Belen", "Vargas", 5539683312, 1);
-INSERT INTO persona ( nombre, apellido, telefono_celular, id_domicilio)    # Guillermo
-	VALUES ("Guillermo", "Morales", 5534768902, 1);
-INSERT INTO persona ( nombre, apellido, telefono_celular, id_domicilio, create_timestamp, update_timestamp) 
-	VALUES ("Alex", "Perez", 5591027345, 4, "2038-01-19 03:14:07", "2038-01-19 03:14:07");
-INSERT INTO persona ( nombre, apellido, telefono_celular, id_domicilio, create_timestamp, update_timestamp) 
-	VALUES ("Antonio", "Santibañez", 5512124471, 2, "2038-01-19 03:14:07", "2038-01-19 03:14:07");
-INSERT INTO persona ( nombre, apellido, telefono_celular, id_domicilio, create_timestamp, update_timestamp) 
-	VALUES ("Jazmin", "Rodriguez", 5534558900, 3, "2038-01-19 03:14:07", "2038-01-19 03:14:07");
-
-
-INSERT INTO cliente( id_persona, create_timestamp, update_timestamp) 
-	VALUES (1, "2038-01-19 03:14:07", "2038-01-19 03:14:07");
-INSERT INTO cliente( id_persona, create_timestamp, update_timestamp)    # CLIENTE 
-	VALUES (2, "2038-01-19 03:14:07", "2038-01-19 03:14:07");
-INSERT INTO cliente( id_persona, create_timestamp, update_timestamp) 
-	VALUES (3, "2038-01-19 03:14:07", "2038-01-19 03:14:07");
-INSERT INTO cliente( id_persona, create_timestamp, update_timestamp) 
-	VALUES (4, "2038-01-19 03:14:07", "2038-01-19 03:14:07"); 
-
-
+INSERT INTO cliente (id_cliente, nombre, apellido, telefono, create_timestamp, update_timestamp) 
+VALUES (1001, 'Ramon', 'Ayala', 57584242, '2018-01-19 03:14:07', '2018-01-19 03:14:07'),
+	   (1002, 'Celia', 'Cruz', 32157584242, '2008-01-19 03:14:07', '2008-01-19 03:14:07');
+	
+/*
 INSERT INTO pedido ( descripcion_pedido, nombre_bazar, id_cliente, create_timestamp, update_timestamp) 
 	VALUES ("Pantalon verde #32", "lettpamoda", 1, "2038-01-19 03:14:07", "2038-01-19 03:14:07"); 
 INSERT INTO pedido ( descripcion_pedido, nombre_bazar, id_cliente, create_timestamp, update_timestamp)   # PEDIDO
@@ -73,3 +56,4 @@ WHERE id_persona = 2
 	
 
 
+*/

@@ -1,6 +1,5 @@
-#create database enviex;
-#use enviex;
 
+/*
 CREATE TABLE domicilio (
 	id_domicilio int NOT NULL AUTO_INCREMENT,
 	calle varchar(50),
@@ -14,29 +13,20 @@ CREATE TABLE domicilio (
 	UNIQUE (id_domicilio)
 );
 
-CREATE TABLE persona (
-	id_persona int NOT NULL AUTO_INCREMENT,
+CREATE TABLE cliente (
+	id_cliente int NOT NULL AUTO_INCREMENT,
 	nombre varchar(50),
 	apellido varchar(50),
-	telefono_celular bigint,
-	id_domicilio int(11),
-	create_timestamp varchar(50),
-	update_timestamp varchar(50),
-	PRIMARY KEY (id_persona),
-	FOREIGN KEY (id_domicilio) REFERENCES domicilio (id_domicilio),
-	UNIQUE (id_persona, telefono_celular ) 
-);
-
-CREATE TABLE cliente ( 
-	id_cliente INT NOT NULL AUTO_INCREMENT,
-	id_persona INT, 
+	telefono bigint,
+	--id_domicilio int(11),
 	create_timestamp varchar(50),
 	update_timestamp varchar(50),
 	PRIMARY KEY (id_cliente),
-	FOREIGN KEY (id_persona)REFERENCES persona (id_persona),
-	unique (id_cliente)
+	--FOREIGN KEY (id_domicilio) REFERENCES domicilio (id_domicilio),
+	UNIQUE (id_cliente, telefono) 
 );
-  
+
+/*
 CREATE TABLE pedido (
 	id_pedido INT NOT NULL AUTO_INCREMENT,
 	descripcion_pedido VARCHAR (100),
@@ -60,5 +50,4 @@ CREATE TABLE venta (
 	FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido), 
 	unique (id_venta)
 );
-
-
+*/
