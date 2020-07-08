@@ -49,7 +49,9 @@ Link to create spring projects
 
 	lista: permite muchos datos nulos 
 	set : solo permite un valor nulo 
-
+	
+	HOMEWORK: Example of an implementation with List and Set, add element, loop elements with for, remove elements using ArrayList() and HashSet()
+	
 	Podemos concluir que dependiendo de los requisitos que tenga nuestro programa seria la opcion de utilizar list o set. Aunque los dos nos sirven para almacenar datos pero tienen diferente funcionalidad.
 
 	* Interface	& Class
