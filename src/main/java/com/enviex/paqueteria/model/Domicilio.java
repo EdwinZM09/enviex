@@ -151,7 +151,15 @@ public class Domicilio {
 	public void setUpdateTimeStamp(String updateTimeStamp) {
 		this.updateTimeStamp = updateTimeStamp;
 	}
+
+	@Override
+	public String toString() {
+		return "Domicilio [idDomicilio=" + idDomicilio + ", calle=" + calle + ", colonia=" + colonia + ", alcaldia="
+				+ alcaldia + ," codigoPostal=" + codigoPostal + ", ciudad=" + ciudad + ", createTimestamp="
+				+ createTimestamp + ", updateTimeStamp=" + updateTimeStamp + "]";
+	}
 	
 	
+	}
 
 }

@@ -103,6 +103,12 @@ public class Pedido {
 	public void setUpdateTimeStamp(String updateTimeStamp) {
 		this.updateTimeStamp = updateTimeStamp;
 	}
+
+	@Override
+	public String toString() {
+		return "Pedido [idPedido=" + idPedido + ", descripcionPedido=" + descripcionPedido + ", nombreBazar="
+				+ nombreBazar + ", createTimestamp=" + createTimestamp + ", updateTimeStamp=" + updateTimeStamp + "]";
+	}
 	
 	
 	
